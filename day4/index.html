@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickNotes — Day 4</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">QUICKNOTES · DAY 4</p>
+        <h1>Thoughts, meet page.</h1>
+        <p class="subtitle">A simple space to get your thoughts down.</p>
+      </div>
+      <button id="theme-toggle" class="button button-secondary" type="button">Dark mode</button>
+    </header>
+
+    <section class="editor" aria-labelledby="editor-title">
+      <label id="editor-title" for="note-text">Your note</label>
+      <textarea id="note-text" placeholder="Start writing here..." rows="10" spellcheck="true"></textarea>
+
+      <div class="counter-row" aria-live="polite">
+        <p id="char-count">0 / 200 characters</p>
+        <p id="word-count">0 words</p>
+      </div>
+
+      <div class="editor-footer">
+        <span class="save-status" id="save-status">Drafts save automatically.</span>
+        <button id="clear-btn" class="button button-danger" type="button">Clear note</button>
+      </div>
+    </section>
+
+    <footer class="app-footer">
+      <p>Your draft stays in this browser on this device.</p>
+    </footer>
+  </main>
+</body>
+</html>
